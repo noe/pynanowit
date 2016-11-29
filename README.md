@@ -4,11 +4,11 @@ A Python, Flask, and SQLite nano twitter clone
     because writing todo lists is not fun
 
 
-    ~ What is PyNanoWit?
+    What is PyNanoWit?
 
       A SQLite and Flask nano twitter clone
 
-    ~ How do I use it?
+    How do I use it?
 
       1. edit the configuration in the pynanowit.py file or
          export an PYNANOWIT_SETTINGS environment variable
@@ -30,7 +30,7 @@ A Python, Flask, and SQLite nano twitter clone
          the application will greet you on
          http://localhost:5000/
 
-    ~ Is it tested?
+    Is it tested?
 
       You betcha. Run the `python setup.py test` file to
       see the tests pass.
