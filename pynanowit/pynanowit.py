@@ -19,7 +19,7 @@ from werkzeug import check_password_hash, generate_password_hash
 
 
 # configuration
-DATABASE = '/tmp/pynanowit.db'
+DATABASE = '/app/tmp/pynanowit.db'
 PER_PAGE = 30
 DEBUG = True
 SECRET_KEY = 'development key'
