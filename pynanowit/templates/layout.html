@@ -1,11 +1,11 @@
 <!doctype html>
 <head>
-  <title>{% block title %}Welcome{% endblock %} | PyNanoWit</title>
+  <title>{% block title %}Welcome{% endblock %} | Research log</title>
   <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
 </head>
 <body>
   <div class="page">
-    <h1>PyNanoWit</h1>
+    <h1>Research log</h1>
     <div class="navigation">
     {% if g.user %}
       <a href="{{ url_for('timeline') }}">my timeline</a> |
@@ -30,7 +30,6 @@
     {% block body %}{% endblock %}
     </div>
     <div class="footer">
-      PyNanoWit &mdash; A Flask Application
     </div>
   </div>
 </body>
