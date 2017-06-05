@@ -1,9 +1,9 @@
 FROM python:3.5-alpine
 VOLUME ["/app/data"]
+EXPOSE 5000
 COPY . /app
 WORKDIR /app
+RUN pip install -r requirements.txt
 ENV PYTHONPATH ${PYTHONPATH}:/app
 ENV FLASK_APP pynanowit
-RUN pip install -r requirements.txt
-RUN flask initdb
-CMD ["flask", "run"]
+CMD ["./run.sh"]

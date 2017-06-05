@@ -8,7 +8,7 @@
     :copyright: (c) 2016 by Matt Santos.
     :license: Apache 2.0, see LICENSE for more details.
 """
-
+import os
 import time
 from sqlite3 import dbapi2 as sqlite3
 from hashlib import md5
@@ -20,9 +20,11 @@ from werkzeug import check_password_hash, generate_password_hash
 
 # configuration
 DATABASE = '/app/data/pynanowit.db'
+#DATABASE = 'tmp/pynanowit.db'
 PER_PAGE = 30
 DEBUG = False
 SECRET_KEY = 'development key'
+
 
 # create our little application :)
 app = Flask(__name__)
